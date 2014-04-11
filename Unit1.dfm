@@ -1,4 +1,4 @@
-object Form1: TForm1
+﻿object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -17,112 +17,176 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object ac1: TSpeedButton
-    Left = 2640
-    Top = 672
+    Left = 8
+    Top = 592
     Width = 23
     Height = 22
     Caption = 'ac1'
+    OnClick = ac1Click
   end
   object ac0: TSpeedButton
-    Left = 2696
-    Top = 672
+    Left = 8
+    Top = 624
     Width = 23
     Height = 22
     Caption = 'ac0'
+    OnClick = ac0Click
+  end
+  object pas: TSpeedButton
+    Left = 48
+    Top = 592
+    Width = 23
+    Height = 22
+    Caption = 'pas'
+    OnClick = pasClick
+  end
+  object pah: TSpeedButton
+    Left = 48
+    Top = 624
+    Width = 23
+    Height = 22
+    Caption = 'pah'
+    OnClick = pahClick
+  end
+  object pbs: TSpeedButton
+    Left = 88
+    Top = 592
+    Width = 23
+    Height = 22
+    Caption = 'pbs'
+    OnClick = pbsClick
+  end
+  object pbh: TSpeedButton
+    Left = 88
+    Top = 624
+    Width = 23
+    Height = 22
+    Caption = 'pbh'
+    OnClick = pbhClick
+  end
+  object pcs: TSpeedButton
+    Left = 128
+    Top = 592
+    Width = 23
+    Height = 22
+    Caption = 'pcs'
+    OnClick = pcsClick
+  end
+  object pch: TSpeedButton
+    Left = 128
+    Top = 624
+    Width = 23
+    Height = 22
+    Caption = 'pch'
+    OnClick = pchClick
+  end
+  object pts: TSpeedButton
+    Left = 168
+    Top = 592
+    Width = 23
+    Height = 22
+    Caption = 'pts'
+  end
+  object pth: TSpeedButton
+    Left = 168
+    Top = 624
+    Width = 23
+    Height = 22
+    Caption = 'pth'
   end
   object PA: TPanel
     Left = 10
     Top = 10
-    Width = 553
+    Width = 551
     Height = 561
     Caption = 'PA'
     TabOrder = 0
-    object Button1: TButton
+    object ba0: TButton
       Left = 8
       Top = 8
       Width = 250
       Height = 25
-      Caption = 'Button1'
+      Caption = 'ba0'
       TabOrder = 0
     end
-    object Button2: TButton
+    object ba1: TButton
       Left = 8
       Top = 39
       Width = 250
       Height = 25
-      Caption = 'Button2'
+      Caption = 'ba1'
       TabOrder = 1
     end
-    object Button3: TButton
+    object ba2: TButton
       Left = 8
       Top = 70
       Width = 250
       Height = 25
-      Caption = 'Button3'
+      Caption = 'ba2'
       TabOrder = 2
     end
-    object Button4: TButton
+    object ba3: TButton
       Left = 8
       Top = 101
       Width = 250
       Height = 25
-      Caption = 'Button4'
+      Caption = 'ba3'
       TabOrder = 3
     end
-    object Button5: TButton
+    object ba4: TButton
       Left = 8
       Top = 132
       Width = 250
       Height = 25
-      Caption = 'Button5'
+      Caption = 'ba4'
       TabOrder = 4
     end
-    object Button6: TButton
+    object ba5: TButton
       Left = 8
       Top = 163
       Width = 250
       Height = 25
-      Caption = 'Button6'
+      Caption = 'ba5'
       TabOrder = 5
     end
-    object Button7: TButton
+    object ba6: TButton
       Left = 8
       Top = 194
       Width = 250
       Height = 25
-      Caption = 'Button7'
+      Caption = 'ba6'
       TabOrder = 6
     end
-    object Button8: TButton
+    object ba7: TButton
       Left = 8
       Top = 225
       Width = 250
       Height = 25
-      Caption = 'Button8'
+      Caption = 'ba7'
       TabOrder = 7
     end
-    object Button9: TButton
+    object ba8: TButton
       Left = 8
       Top = 256
       Width = 250
       Height = 25
-      Caption = 'Button9'
+      Caption = 'ba8'
       TabOrder = 8
     end
-    object Button10: TButton
+    object ba9: TButton
       Left = 8
       Top = 287
       Width = 250
       Height = 25
-      Caption = 'Button10'
+      Caption = 'ba9'
       TabOrder = 9
     end
-    object Button11: TButton
+    object Видео: TButton
       Left = 8
       Top = 352
       Width = 250
       Height = 25
-      Caption = 'Button11'
+      Caption = #1042#1080#1076#1077#1086
       TabOrder = 10
     end
     object Button12: TButton
@@ -165,85 +229,85 @@ object Form1: TForm1
       Caption = 'Button16'
       TabOrder = 15
     end
-    object Edit1: TEdit
+    object ea0: TEdit
       Left = 264
       Top = 10
       Width = 121
       Height = 21
       TabOrder = 16
-      Text = 'Edit1'
+      Text = 'ea0'
     end
-    object Edit2: TEdit
+    object ea1: TEdit
       Left = 264
       Top = 37
       Width = 121
       Height = 21
       TabOrder = 17
-      Text = 'Edit2'
+      Text = 'ea1'
     end
-    object Edit3: TEdit
+    object ea2: TEdit
       Left = 264
       Top = 72
       Width = 121
       Height = 21
       TabOrder = 18
-      Text = 'Edit3'
+      Text = 'ea2'
     end
-    object Edit4: TEdit
+    object ea3: TEdit
       Left = 264
       Top = 104
       Width = 121
       Height = 21
       TabOrder = 19
-      Text = 'Edit4'
+      Text = 'ea3'
     end
-    object Edit5: TEdit
+    object ea4: TEdit
       Left = 264
       Top = 136
       Width = 121
       Height = 21
       TabOrder = 20
-      Text = 'Edit5'
+      Text = 'ea4'
     end
-    object Edit6: TEdit
+    object ea5: TEdit
       Left = 264
       Top = 160
       Width = 121
       Height = 21
       TabOrder = 21
-      Text = 'Edit6'
+      Text = 'ea5'
     end
-    object Edit7: TEdit
+    object ea6: TEdit
       Left = 264
       Top = 200
       Width = 121
       Height = 21
       TabOrder = 22
-      Text = 'Edit7'
+      Text = 'ea6'
     end
-    object Edit8: TEdit
+    object ea7: TEdit
       Left = 264
       Top = 224
       Width = 121
       Height = 21
       TabOrder = 23
-      Text = 'Edit8'
+      Text = 'ea7'
     end
-    object Edit9: TEdit
+    object ea8: TEdit
       Left = 264
       Top = 256
       Width = 121
       Height = 21
       TabOrder = 24
-      Text = 'Edit9'
+      Text = 'ea8'
     end
-    object Edit10: TEdit
+    object ea9: TEdit
       Left = 264
       Top = 288
       Width = 121
       Height = 21
       TabOrder = 25
-      Text = 'Edit10'
+      Text = 'ea9'
     end
     object Button17: TButton
       Left = 264
@@ -253,92 +317,92 @@ object Form1: TForm1
       Caption = 'Button17'
       TabOrder = 26
     end
-    object BitBtn1: TBitBtn
+    object am0: TBitBtn
       Left = 392
       Top = 8
       Width = 75
       Height = 25
-      Caption = 'BitBtn1'
+      Caption = 'am0'
       TabOrder = 27
     end
-    object BitBtn2: TBitBtn
+    object am1: TBitBtn
       Left = 392
       Top = 40
       Width = 75
       Height = 25
-      Caption = 'BitBtn2'
+      Caption = 'am1'
       TabOrder = 28
     end
-    object BitBtn3: TBitBtn
+    object am2: TBitBtn
       Left = 392
       Top = 72
       Width = 75
       Height = 25
-      Caption = 'BitBtn3'
+      Caption = 'am2'
       TabOrder = 29
     end
-    object BitBtn4: TBitBtn
+    object am3: TBitBtn
       Left = 392
       Top = 104
       Width = 75
       Height = 25
-      Caption = 'BitBtn4'
+      Caption = 'am3'
       TabOrder = 30
     end
-    object BitBtn5: TBitBtn
+    object am4: TBitBtn
       Left = 392
       Top = 136
       Width = 75
       Height = 25
-      Caption = 'BitBtn5'
+      Caption = 'am4'
       TabOrder = 31
     end
-    object BitBtn6: TBitBtn
+    object am5: TBitBtn
       Left = 392
       Top = 168
       Width = 75
       Height = 25
-      Caption = 'BitBtn6'
+      Caption = 'am5'
       TabOrder = 32
     end
-    object BitBtn7: TBitBtn
+    object am6: TBitBtn
       Left = 392
       Top = 200
       Width = 75
       Height = 25
-      Caption = 'BitBtn7'
+      Caption = 'am6'
       TabOrder = 33
     end
-    object BitBtn8: TBitBtn
+    object am7: TBitBtn
       Left = 392
       Top = 232
       Width = 75
       Height = 25
-      Caption = 'BitBtn8'
+      Caption = 'am7'
       TabOrder = 34
     end
-    object BitBtn9: TBitBtn
+    object am8: TBitBtn
       Left = 391
       Top = 265
       Width = 75
       Height = 25
-      Caption = 'BitBtn9'
+      Caption = 'am8'
       TabOrder = 35
     end
-    object BitBtn10: TBitBtn
+    object am9: TBitBtn
       Left = 391
       Top = 296
       Width = 75
       Height = 25
-      Caption = 'BitBtn10'
+      Caption = 'am9'
       TabOrder = 36
     end
-    object BitBtn11: TBitBtn
+    object ad: TBitBtn
       Left = 472
       Top = 136
       Width = 75
       Height = 25
-      Caption = 'BitBtn11'
+      Caption = 'ad'
       TabOrder = 37
     end
   end
@@ -606,12 +670,12 @@ object Form1: TForm1
       TabOrder = 31
     end
   end
-  object Panel1: TPanel
+  object PC: TPanel
     Left = 600
     Top = 601
     Width = 521
     Height = 569
-    Caption = 'Panel1'
+    Caption = 'PC'
     TabOrder = 2
     object ListBox1: TListBox
       Left = 9
@@ -646,12 +710,12 @@ object Form1: TForm1
       TabOrder = 3
     end
   end
-  object Panel2: TPanel
+  object PT: TPanel
     Left = 1640
     Top = 21
     Width = 465
     Height = 569
-    Caption = 'Panel2'
+    Caption = 'PT'
     TabOrder = 3
     object Label4: TLabel
       Left = 8

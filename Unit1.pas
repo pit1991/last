@@ -10,44 +10,44 @@ uses
 type
   TForm1 = class(TForm)
     PA: TPanel;
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    Button6: TButton;
-    Button7: TButton;
-    Button8: TButton;
-    Button9: TButton;
-    Button10: TButton;
-    Button11: TButton;
+    ba0: TButton;
+    ba1: TButton;
+    ba2: TButton;
+    ba3: TButton;
+    ba4: TButton;
+    ba5: TButton;
+    ba6: TButton;
+    ba7: TButton;
+    ba8: TButton;
+    ba9: TButton;
+    Видео: TButton;
     Button12: TButton;
     Button13: TButton;
     Button14: TButton;
     Button15: TButton;
     Button16: TButton;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Edit4: TEdit;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
+    ea0: TEdit;
+    ea1: TEdit;
+    ea2: TEdit;
+    ea3: TEdit;
+    ea4: TEdit;
+    ea5: TEdit;
+    ea6: TEdit;
+    ea7: TEdit;
+    ea8: TEdit;
+    ea9: TEdit;
     Button17: TButton;
-    BitBtn1: TBitBtn;
-    BitBtn2: TBitBtn;
-    BitBtn3: TBitBtn;
-    BitBtn4: TBitBtn;
-    BitBtn5: TBitBtn;
-    BitBtn6: TBitBtn;
-    BitBtn7: TBitBtn;
-    BitBtn8: TBitBtn;
-    BitBtn9: TBitBtn;
-    BitBtn10: TBitBtn;
-    BitBtn11: TBitBtn;
+    am0: TBitBtn;
+    am1: TBitBtn;
+    am2: TBitBtn;
+    am3: TBitBtn;
+    am4: TBitBtn;
+    am5: TBitBtn;
+    am6: TBitBtn;
+    am7: TBitBtn;
+    am8: TBitBtn;
+    am9: TBitBtn;
+    ad: TBitBtn;
     PB: TPanel;
     Button18: TButton;
     Button19: TButton;
@@ -81,11 +81,11 @@ type
     BitBtn20: TBitBtn;
     BitBtn21: TBitBtn;
     BitBtn22: TBitBtn;
-    Panel1: TPanel;
+    PC: TPanel;
     ListBox1: TListBox;
     Edit21: TEdit;
     CheckBox1: TCheckBox;
-    Panel2: TPanel;
+    PT: TPanel;
     Memo1: TMemo;
     CheckBox2: TCheckBox;
     CheckBox3: TCheckBox;
@@ -136,6 +136,14 @@ type
     s0: TBitBtn;
     ac1: TSpeedButton;
     ac0: TSpeedButton;
+    pas: TSpeedButton;
+    pah: TSpeedButton;
+    pbs: TSpeedButton;
+    pbh: TSpeedButton;
+    pcs: TSpeedButton;
+    pch: TSpeedButton;
+    pts: TSpeedButton;
+    pth: TSpeedButton;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure BitBtn23Click(Sender: TObject);
@@ -144,6 +152,14 @@ type
     procedure s0Click(Sender: TObject);
     procedure CheckBox8Click(Sender: TObject);
     procedure Button33Click(Sender: TObject);
+    procedure pasClick(Sender: TObject);
+    procedure pbsClick(Sender: TObject);
+    procedure pahClick(Sender: TObject);
+    procedure pbhClick(Sender: TObject);
+    procedure pcsClick(Sender: TObject);
+    procedure pchClick(Sender: TObject);
+    procedure ac0Click(Sender: TObject);
+    procedure ac1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -166,6 +182,16 @@ implementation
 {$R *.dfm}
 
 
+
+procedure TForm1.ac0Click(Sender: TObject);
+begin
+access:=0;
+end;
+
+procedure TForm1.ac1Click(Sender: TObject);
+begin
+access:=1;
+end;
 
 procedure TForm1.BitBtn23Click(Sender: TObject);
 begin
@@ -211,6 +237,27 @@ begin
     Form1.Top:=S.ReadInteger('Setup','Y',10);
     wait:=1;  so:=0;  access:=0;
 
+    if S.ReadString('setup','mode','')='1' then
+        begin
+        way:=S.ReadString('setup','way','');
+        checkbox9.Checked:=true;
+        button31.Show;
+        Label2.Show;
+        end
+          else begin
+          way:=extractfilepath(paramstr(0));
+          checkbox9.Checked:=false;
+          button31.Hide;
+          Label2.Hide;
+          end;
+
+    pass:=S.ReadString('Setup','asd','');
+    label2.Caption:=way;
+
+    A:=TIniFile.Create(way+'\Data\A');
+    Q:=TIniFile.Create(way+'\Data\Q');
+    F:=TIniFile.Create(way+'\Data\F');
+
     s0.Left:=form1.Width-50;     s0.Top:=10;
     s1.Left:=form1.Width-220;    s1.Top:=-500;
     s2.Left:=form1.Width-220;    s2.Top:=-500;
@@ -229,6 +276,54 @@ begin
     s0.Left:=form1.Width-50;
     s1.Left:=form1.Width-220;
     s2.Left:=form1.Width-220;
+end;
+
+procedure TForm1.pahClick(Sender: TObject);
+begin
+while pa.Left>-500 do
+    begin
+    pa.Left:=pa.Left-5; sleep(wait); pa.Update;
+    end;
+end;
+
+procedure TForm1.pasClick(Sender: TObject);
+begin
+while pa.Left<10 do
+    begin
+    pa.Left:=pa.Left+5; sleep(wait); pa.Update;
+    end;
+end;
+
+procedure TForm1.pbhClick(Sender: TObject);
+begin
+while pb.Left>-500 do
+    begin
+    pb.Left:=pb.Left-5; sleep(wait); pb.Update;
+    end;
+end;
+
+procedure TForm1.pbsClick(Sender: TObject);
+begin
+while pb.Left<10 do
+    begin
+    pb.Left:=pb.Left+5; sleep(wait); pb.Update;
+    end;
+end;
+
+procedure TForm1.pchClick(Sender: TObject);
+begin
+while PC.Top>-500 do
+    begin
+    pc.Top:=pc.Top-5; sleep(wait); pc.Update;
+    end;
+end;
+
+procedure TForm1.pcsClick(Sender: TObject);
+begin
+while PC.Top<10 do
+    begin
+    pc.Top:=pc.Top+5; sleep(wait); pc.Update;
+    end;
 end;
 
 procedure TForm1.s0Click(Sender: TObject);
